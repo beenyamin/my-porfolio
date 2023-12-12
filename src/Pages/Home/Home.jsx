@@ -13,6 +13,7 @@ const Home = () => {
 
 
             <div className=" text-lg pt-24">
+                
                 <Banner></Banner>
                 <Skills></Skills>
            
