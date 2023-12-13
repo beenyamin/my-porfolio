@@ -14,18 +14,18 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="px-20  ">
-            <div className="shadow-xl bg-white ml-8 w-11/12 h-80 lg:h-96 rounded-xl mt-20 lg:px-20 pt-12">
+        <div className="px-20">
+            <div className="shadow-xl bg-white lg:ml-9  lg:h-96 rounded-xl mt-20 lg:px-20 pt-12">
                 <form onSubmit="">
-                    <h2 className="font-bold text-2xl mb-4 ml-6 text-gray-600">Get In Touch</h2>
-                    <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 ml-6 " >
+                    <h2 className="font-bold text-2xl mb-4 ml-9 text-gray-600">Get In Touch</h2>
+                    <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 ml-9 " >
                         <input type="text" placeholder="Your Name" required className="input input-bordered input-error w-9/12 lg:w-11/12 max-w-xs" />
                         <input type="Email" placeholder="Your Email" required  className="input input-bordered input-error w-9/12 lg:w-11/12 max-w-xs" />
                         <input type="text" placeholder="Your Number"  required className="input input-bordered input-error w-9/12 lg:w-11/12 max-w-xs" />
                     </div>
-                    <textarea placeholder="Message" className="textarea mt-10 textarea-bordered textarea-error textarea-lg w-9/12 lg:w-11/12 ml-6  " ></textarea>
+                    <textarea placeholder="Message" className="textarea mt-10 textarea-bordered textarea-error textarea-lg w-8/12 lg:w-11/12 ml-9  " ></textarea>
 
-                   <div className="pb-12 pl-5 pt-2  ">
+                   <div className="pb-12 pl-12 pt-2  ">
                    <ReactiveButton
                         buttonState={state}
                         onClick={onClickHandler}

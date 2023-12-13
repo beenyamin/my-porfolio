@@ -11,7 +11,7 @@ import { TiHtml5 } from "react-icons/ti";
 const Skills = () => {
     return (
         <div className="my-20">
-            <h2 className="text-center text-2xl font-bold"> ~ My Skills ~ </h2>
+            <h2 className="text-center text-2xl font-bold"> ~ My Technical Skills ~ </h2>
             <div className="grid md:px-10 grid-cols-1 md:grid-cols-4 mt-10 md:ml-3 gap-5 ml-24">
 
             <div>

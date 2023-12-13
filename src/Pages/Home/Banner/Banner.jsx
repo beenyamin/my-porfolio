@@ -25,7 +25,7 @@ const Banner = () => {
 
             <div className="ml-10 md:ml-14 md:mt-16 ">
                 <h2 className="font-medium mt-2">Hi, I am</h2>
-                <h1 className="text-4xl font-extrabold mt-1">Bee Yamin</h1>
+                <h1 className="text-4xl font-extrabold mt-1">Been Yamin</h1>
                 <p className="mt-2">~ Passionate developer skilled in creating <br /> innovative solutions for diverse challenges ~</p>
                 <div className="flex gap-3 mt-2">
                     {/* <Link to=""><ReactiveButton color="red" rounded idleText="Download CV" animation={true} /></Link> */}
@@ -45,7 +45,9 @@ const Banner = () => {
                         messageDuration={2000}
                         animation={true}/>
 
-                    <Link to="/contact"><ReactiveButton color="red" rounded idleText="Contact Me" animation={true} /></Link>
+                    <Link to="/contact"><ReactiveButton 
+                    color="red" rounded idleText="Contact Me" 
+                    animation={true} /></Link>
                 </div>
             </div>
             <div className="md:ml-20 ml-5">

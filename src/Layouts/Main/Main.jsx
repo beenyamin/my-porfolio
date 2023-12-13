@@ -12,7 +12,7 @@ const Main = () => {
                 <Outlet></Outlet>
           
 
-            <div className=" mt-96 lg:mt-60">
+            <div className=" mt-20 lg:mt-20">
             <Footer></Footer>
             </div>
         </div>

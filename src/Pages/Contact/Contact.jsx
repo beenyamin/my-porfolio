@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
     return (
-        <div className="h-screen pt-36">
+        <div className="pt-36">
             <Helmet>
                 <title> Yamin | Contact </title>
             </Helmet>
@@ -13,7 +13,7 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-20">
                 {/* 1 */}
                 <div>
-                    <div className="card w-60 lg:ml-12 h-24 bg-white  shadow-lg">
+                    <div className="card w-56  lg:ml-16 h-24 bg-white  shadow-lg">
                         <div className="flex flex-row pl-6 pt-8">
                        <div className="text-start  text-4xl text-red-500">
                          <FontAwesomeIcon icon={faMobileButton} />
@@ -29,14 +29,14 @@ const Contact = () => {
                 {/* 2 */}
 
                 <div className="">
-                    <div className="card w-72 h-24 bg-white shadow-lg">
+                    <div className="card w-72  h-24  bg-white shadow-lg">
                         <div className="flex flex-row pl-6 pt-8">
                        <div className="text-start text-4xl text-red-500">
                        <FontAwesomeIcon icon={faEnvelopeCircleCheck} />
                          </div>
                          <div className="pl-2">
-                            <p className="pl-1 text-gray-500 font-normal">Email</p>
-                            <p className="text-mono text-gray-500 font-normal">beenyamin115@gmail.com</p>
+                            <p className="pl-1 text-gray-500 ">Email</p>
+                            <p className=" text-base text-gray-500">beenyamin115@gmail.com</p>
                          </div>
 
                         </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                 {/* 3 */}
 
                 <div>
-                    <div className="card w-60 h-24 bg-white shadow-lg">
+                    <div className="card w-56 h-24 bg-white shadow-lg">
                         <div className="flex flex-row pl-6 pt-8">
                        <div className="text-start text-4xl text-red-500">
                        <FontAwesomeIcon icon={faHouseChimneyCrack} />
@@ -60,11 +60,11 @@ const Contact = () => {
                 </div>
             </div>
 
-            <ContactForm/>
+           <div className="">
+           <ContactForm></ContactForm>
+           </div>
 
 
-
-           
         </div>
     );
 };
