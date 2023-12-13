@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="">
 
             <footer className=" bg-base-200 py-10 text-base-content rounded">
-                <h2 className="text-xl font-semibold text-center">Catch Me On</h2>
+                <h2 className="text-xl font-semibold text-gray-600 text-center">Catch Me On</h2>
                 <nav>
                     <div className="flex gap-2 item-center justify-center mt-3">
                        <Link to='https://www.linkedin.com/in/been-yamin-434976182/' className="text-blue-600"><FaLinkedin size={20} /></Link>
@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                 </nav>
                 <aside>
-                    <p className="text-center mt-4 text-opacity-50 ">Copyright © 2023 - Created By Been Yamin</p>
+                    <p className="text-center mt-4 text-opacity-50 text-gray-900 ">Copyright © 2023 - Created By Been Yamin</p>
                 </aside>
             </footer>
         </div>

@@ -8,13 +8,12 @@ const Main = () => {
         <div className="font-Poppins max-w-5xl rounded-2xl mx-auto bg-[#eae4e6]  ">
             <Navbar></Navbar>
          
-            <div>
+         
                 <Outlet></Outlet>
-            </div>
-            
-            <div className="mt-64 md:mt-0">
-            <Footer></Footer>
+          
 
+            <div className=" mt-96 lg:mt-60">
+            <Footer></Footer>
             </div>
         </div>
     );
