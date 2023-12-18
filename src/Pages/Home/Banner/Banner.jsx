@@ -26,31 +26,36 @@ const Banner = () => {
             <div className="ml-10 md:ml-14 md:mt-16 ">
                 <h2 className="font-medium mt-2">Hi, I am</h2>
                 <h1 className="text-4xl font-extrabold mt-1">Been Yamin</h1>
-                <p className="mt-2">~ Passionate developer skilled in creating <br /> innovative solutions for diverse challenges ~</p>
+                <p className="mt-2 text-base">~ Skilled MERN Stack Developer <br /> in building innovative solutions
+                   <br /> For different challenges ~</p>
                 <div className="flex gap-3 mt-2">
                     {/* <Link to=""><ReactiveButton color="red" rounded idleText="Download CV" animation={true} /></Link> */}
-                    <ReactiveButton
-                        buttonState={state}
-                        onClick={onClickHandler}
-                        color={'red'}
-                        idleText={'Download CV'}
-                        loadingText={<><FontAwesomeIcon icon={faCircleNotch} spin /> Loading </> }
-                        successText={ <><FontAwesomeIcon icon={faThumbsUp} /> Success </>}
-                        errorText={<> <FontAwesomeIcon icon={faBomb} /> Error </> }
-                        type={'button'}
-                        className={'class1 class2'}
-                        style={{  borderRadius: '5px',}}
-                        rounded={true}
-                        size={'normal'}
-                        messageDuration={2000}
-                        animation={true}/>
+                    <a href="https://drive.google.com/u/0/uc?id=1JhW6muouz0JjUIaBlDMXTPTNtE7bOoi3&export=download" download>
+                        <ReactiveButton
+                            buttonState={state}
+                            onClick={onClickHandler}
+                            color={'red'}
+                            idleText={'My Resume'}
+                            loadingText={<><FontAwesomeIcon icon={faCircleNotch} spin /> Downloading </>}
+                            successText={<><FontAwesomeIcon icon={faThumbsUp} /> Success </>}
+                            errorText={<> <FontAwesomeIcon icon={faBomb} /> Error </>}
+                            type={'button'}
+                            className={'class1 class2'}
+                            style={{ borderRadius: '5px' }}
+                            rounded={true}
+                            size={'normal'}
+                            messageDuration={2000}
+                            animation={true}
+                        />
+                    </a>
 
-                    <Link to="/contact"><ReactiveButton 
-                    color="red" rounded idleText="Contact Me" 
-                    animation={true} /></Link>
+
+                    <Link to="/contact"><ReactiveButton
+                        color="red" rounded idleText="Contact Me"
+                        animation={true} /></Link>
                 </div>
             </div>
-            <div className="md:ml-20 ml-5">
+            <div className="md:ml-20 ml-5 ">
                 <img src={bannerImg} className="w-80 h-80" alt="" />
             </div>
 

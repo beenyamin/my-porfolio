@@ -15,7 +15,7 @@ const ContactForm = () => {
 
     return (
         <div className="px-20">
-            <div className="shadow-xl bg-white lg:ml-9  lg:h-96 rounded-xl mt-20 lg:px-20 pt-12">
+            <div className="shadow-xl bg-white lg:ml-6 lg:h-96 rounded-xl mt-20 lg:px-16 pt-12">
                 <form onSubmit="">
                     <h2 className="font-bold text-2xl mb-4 ml-9 text-gray-600">Get In Touch</h2>
                     <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 ml-9 " >

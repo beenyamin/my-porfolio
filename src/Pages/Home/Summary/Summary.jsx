@@ -1,7 +1,7 @@
 
 const Summary = () => {
     return (
-        <div className="mt-10 bg-white px-10 ml-14 mr-14 pt-8  pb-11 rounded-2xl">
+        <div className="mt-10 bg-white dark:bg-zinc-700 px-10 ml-14 mr-14 pt-8  pb-11 rounded-2xl">
             <h2 className="text-center text-2xl font-bold">~ Summary Of My Resume ~ </h2>
           
             <div className="flex flex-col w-full h-11/12 pb-24 lg:pb-4 lg:mt-7 lg:flex-row">
@@ -24,7 +24,7 @@ const Summary = () => {
                
                 </div>
                 
-                <div className="divider lg:divider-horizontal  "></div>
+                <div className="divider lg:divider-horizontal   "></div>
 
                 <div className="grid flex-grow h-36 card   rounded-box place-items-center">
                     <div>

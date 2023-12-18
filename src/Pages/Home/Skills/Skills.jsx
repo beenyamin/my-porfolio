@@ -15,7 +15,7 @@ const Skills = () => {
             <div className="grid md:px-10 grid-cols-1 md:grid-cols-4 mt-10 md:ml-3 gap-5 ml-24">
 
             <div>
-                    <div className="card w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card w-48 bg-neutral dark:bg-white dark:text-zinc-700 text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-orange-500 "><TiHtml5  size={70} /></div>
                             <h2 className="card-title"> Html</h2>
@@ -27,7 +27,7 @@ const Skills = () => {
                 </div>
 
                 <div>
-                    <div className="card w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card w-48 dark:bg-white dark:text-zinc-700  bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-sky-400"><SiTailwindcss  size={70} /></div>
                             <h2 className="card-title"> Tailwind css</h2>
@@ -44,7 +44,7 @@ const Skills = () => {
               
 {/* react */}
                 <div>
-                    <div className="card w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card w-48 dark:bg-white dark:text-zinc-700  bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-sky-300"><FaReact size={70} /></div>
                             <h2 className="card-title">React </h2>
@@ -56,7 +56,7 @@ const Skills = () => {
                 </div>
 {/* js */}
                 <div>
-                    <div className="card w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card w-48 dark:bg-white dark:text-zinc-700  bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-yellow-400"><RiJavascriptFill size={70} /></div>
                             <h2 className="card-title"> JavaScript </h2>
@@ -68,7 +68,7 @@ const Skills = () => {
                 </div>
 {/*  express    */}
                 <div>
-                    <div className="card w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card w-48 dark:bg-white dark:text-zinc-700  bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-yellow-400"><SiExpress size={70} /></div>
                             <h2 className="card-title"> Express.js </h2>
@@ -82,7 +82,7 @@ const Skills = () => {
                 
 
                 <div>
-                    <div className="card w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card w-48 dark:bg-white dark:text-zinc-700  bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-green-500"><SiMongodb  size={70} /></div>
                             <h2 className="card-title"> MongoDb</h2>
@@ -93,7 +93,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="card w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card w-48 dark:bg-white dark:text-zinc-700  bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-White"><SiNextdotjs  size={70} /></div>
                             <h2 className="card-title"> Next.js</h2>
@@ -106,7 +106,7 @@ const Skills = () => {
 
 
   <div>
-                    <div className="card  w-48 bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
+                    <div className="card  w-48 dark:bg-white dark:text-zinc-700  bg-neutral text-neutral-content transition-transform transform-gpu hover:scale-105">
                         <div className="card-body items-center text-center">
                             <div className="text-green-400"><FaNode size={70} /></div>
                             <h2 className="card-title">Node.Js </h2>

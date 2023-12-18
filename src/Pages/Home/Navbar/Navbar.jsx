@@ -1,11 +1,14 @@
 import { faToggleOff, faToggleOn } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
+import { useTheme } from '../../../Hooks/useTheme';
 
 const Checking = () => {
+    const { changeTheme, mode } = useTheme();
+
     return (
         <div>
-            <div className="navbar items-center justify-center bg-base-100 max-w-3xl fixed bg-opacity-50 mt-5 z-10 lg:ml-32 rounded-full ">
+            <div className="navbar items-center justify-center dark:bg-zinc-700 bg-base-100 max-w-3xl fixed bg-opacity-50 mt-5 z-10 lg:ml-32 rounded-full ">
                 {/* phone */}
                 <div className="navbar-start ">
                     <div className="dropdown">
@@ -15,12 +18,12 @@ const Checking = () => {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <NavLink to="/" className={({ isActive }) => `${isActive ? 'btn btn-sm btn-error text-white dark:text-white rounded-full' : 'btn  btn-ghost dark:text-black btn-sm rounded-full'}`} > Home </NavLink>
 
-                            <NavLink to="/project" className={({ isActive }) => `${isActive ? 'btn btn-sm btn-error text-white dark:text-black  rounded-full' : 'btn dark:text-black btn-ghost btn-sm rounded-full'}`} > Projects</NavLink>
+                            <NavLink to="/project" className={({ isActive }) => `${isActive ? 'btn btn-sm btn-error text-white dark:text-white rounded-full' : 'btn  btn-ghost dark:text-black btn-sm rounded-full'}`} > Projects</NavLink>
 
-                            <NavLink to="/contact" className={({ isActive }) => `${isActive ? 'btn btn-sm btn-error text-white dark:text-black  ' : 'btn dark:text-black btn-ghost btn-sm rounded-full'}`} > Contact Me</NavLink>
+                            <NavLink to="/contact" className={({ isActive }) => `${isActive ? 'btn btn-sm btn-error text-white dark:text-white rounded-full' : 'btn  btn-ghost dark:text-black btn-sm rounded-full'}`} > Contact Me</NavLink>
                         </ul>
                     </div>
-                    
+
 
                     <div className="avatar ml-3 mt-0 md:mt-2 placeholder">
                         <div className="bg-red-500 text-neutral-content rounded-full w-8">
@@ -36,11 +39,11 @@ const Checking = () => {
                 <div className="navbar-center pl-80 hidden lg:flex">
                     <ul className="menu menu-horizontal ">
 
-                        <NavLink to="/" className={({ isActive }) => isActive ? 'btn btn-sm btn-ghost rounded-full  text-red-400 dark:text-white' : 'btn rounded-full btn-ghost dark:text-black btn-sm'} > Home  </NavLink>
+                        <NavLink to="/" className={({ isActive }) => isActive ? 'btn btn-sm btn-ghost rounded-full  text-red-400 dark:text-red-400' : 'btn rounded-full btn-ghost dark:text-white btn-sm'} > Home  </NavLink>
 
-                        <NavLink to="/project" className={({ isActive }) => isActive ? 'btn  btn-sm btn-ghost rounded-full dark:text-black text-red-400' : 'btn dark:text-black btn-ghost btn-sm rounded-full'
+                        <NavLink to="/project" className={({ isActive }) => isActive ? 'btn  btn-sm btn-ghost rounded-full dark:text-red-400 text-red-400' : 'btn dark:text-white btn-ghost btn-sm rounded-full'
                         } > Projects</NavLink>
-                        <NavLink to="/contact" className={({ isActive }) => isActive ? 'btn  btn-sm btn-ghost rounded-full dark:text-black text-red-400' : 'btn dark:text-black btn-ghost btn-sm rounded-full'
+                        <NavLink to="/contact" className={({ isActive }) => isActive ? 'btn  btn-sm btn-ghost rounded-full dark:text-red-400 text-red-400' : 'btn dark:text-white btn-ghost btn-sm rounded-full'
                         } > Contact Me</NavLink>
 
                     </ul>
@@ -48,10 +51,15 @@ const Checking = () => {
                 <div className="navbar-end">
 
                     <div className="">
-                        <h2 className="mt-1 pr-10 lg:ml-0 ml-14 text-2xl"> <FontAwesomeIcon icon={faToggleOff} />
-                        </h2>
-                        {/* <h2 className="mt-3 text-xl"> <FontAwesomeIcon icon={faToggleOn} />
-                    </h2> */}
+                        <button onClick={changeTheme} className="rounded-full ">
+                            {mode === "dark" ? <h2 className=" text-white mt-1  pr-10 lg:ml-0 ml-14 text-2xl"> <FontAwesomeIcon icon={faToggleOn} />
+                            </h2> :
+
+                                <h2 className="mt-1 pr-10 lg:ml-0 ml-14 text-2xl"> <FontAwesomeIcon icon={faToggleOff} />
+                                </h2>}
+                        </button>
+
+
 
 
                     </div>
